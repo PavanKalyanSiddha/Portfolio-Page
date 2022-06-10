@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=10">
+        <title>Responsive CV</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="resume_css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+img{
+    border-radius: 80px;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width:1000px ;
+    min-height: 1000px;
+    margin: 50px;
+    background-color:#fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,1);
+}
+.container .left_side{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0,2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50% ;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.ContactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.ContactInfo.education li{
+    margin-top: 50px;
+}
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+
+}
+.about{
+    margin-bottom: 50px;
+   
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.p{
+    color: #333;
+}
+.about .title2{
+    color:#003147 ;
+}
+ .about ul li span{
+    color: #003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+} 
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 10px;
+}
+@media(max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left_side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="pavan1.jpg">
+                    </div>
+                   
+                   <h2>Siddha Pavan Kalyan<br><span>Developer</span></h2>
+                </div>
+                <div class="contactInfo">
+                    <h3 class="title">ContactInfo</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+91 9063346744</span>
+                            <span class="text">+91 8328114894</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></span>
+                            <span class="text">pavankumarnspt419@gmail.com</span>
+                            <span class="text">pk9063346744@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text">https://www.linkedin.com/in/pavan-kalyan-9b486a137/</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Narsampet,Warangal,Telangana,India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li>
+                            <h5>2016-2020</h5>
+                            <h4>Bachelor's Degree </h4>
+                            <h4>Electronics And Communication Engineering</h4>
+                            <h4>Degree percentage -60.31%</h4>
+                            <h4>Malla Reddy College Of Engineering And Technology</h4>
+                        </li>
+                        <li>
+                            <h5>2014-2016</h5>
+                            <h4>Twelve standard</h4>
+                            <h4>Board of Intermediate Education</h4>
+                             <h4>Inter percentage -96.4%</h4>
+                            <h4>Kakathiya Graduates Junior College</h4>
+                        </li>
+                        <li>
+                            <h5>2014</h5>
+                            <h4>Tenth standard </h4>
+                            <h4>Siddhartha Gurukulam</h4>
+                            <h4>Board of Secondary Education</h4>
+                            <h4>Tenth percentage -97%</h4>
+
+                        </li>
+                        <div class="contactInfo personal Details">
+                    <h3 class="title">Personal Details</h3>
+                    <ul>
+                        <li>
+                            <h4>Full name: Siddha Pavan Kalyan </h4>
+                            <h4>Father name: Sadanandam </h4>
+                            <h4>Father Occupation: Former </h4>
+                            <h4>Mother name: Lavanya </h4>
+                            <h4>Mother Occupation: Former</h4>
+                            <h4>City: Narsampet </h4>
+                            <h4>District: Warangal </h4>
+                            <h4>State: Telangana </h4>
+                            <h4>Address: 17-92, Narsampet, 506132</h4>
+
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+                 
+            </div>
+
+                <div class="right_side">
+                       <div class="about">
+                           <h2 class="title2">Career Objective</h2>
+                           <p>To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills. Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</p>
+                        </div>
+                       <div class="about"> 
+                           <h2 class="title2">Technical Softwares</h2>
+                           <ul>
+                                <li>Auto Cad</li>
+                                <li>Mat Lab</li>  
+                           </ul>
+                       </div>
+                       <div class="about skills">
+                           <h2 class="title2">Web Development</h2>
+                               <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Javascript</li>
+                                <li>FullStack Web-Development </li>
+
+                               </ul>
+                                </div>
+                       <div class="about skills">
+                           <h2 class="title2">Programming Langauges</h2>
+                               <ul>
+                                <li>Java</li>
+                               </ul>
+                               </div>
+                       <div class="about Internships">
+                           <h2 class="title2">Internships</h2>
+                               <ul>
+                                <li>B.tech Internship- Electronics </li>
+                                Description :Internship about Electrical and technical domain
+                                <li>Software Developer- NewtonSchool</li>
+                                Description :FullStack Web-Development Course
+                               </ul>
+                                </div>
+                       <div class="about Projects">
+                           <h2 class="title2"> Technical Projects</h2>
+                               <ul>
+                               <li>B.Tech Mini Project:
+Title: Characterization of MR Brain tumour.</li>
+Description: Segmentation is a process of partitioning the image into several objects. It plays a vital role in many fields such as
+satellite, remote sensing, object identification and most importantly in medical field. In radiology, Magnetic Resonance Imaging (MRI)
+is used to investigate the human body processes and functions of organisms. In hospitals these method is widely used to diagnosis
+the disease stage and follow up.
+
+ <li>B.Tech Major Project:
+Title: Solar Tracking System</li> 
+Description: The generation of power from the reduction of fussil fuels is the biggest challenge for next half century. The idea of
+converting solar energy into electrical energy using photovoltaic panels holds its place in front row compared to other renewable
+sources
+                               </ul>
+                               <div class="about Projects">
+                           <h2 class="title2"> Software  Projects</h2>
+                               <ul>
+                                <li>Responsive CV</li>
+                                Description: Creating a responsive cv with the help of Html, Css and java script
+                                <li>JS Mini-projects</li>
+                                Description: Creating Tic-Tac-Toe and Calculator by using Html, Css and Js.
+                               </ul>
+                       </div>
+                       <div class="about languages">
+                        <h2 class="title2">Languages Known</h3>
+                        <ul>
+                            <li>English</li>
+                            <li>Telugu</li>
+                        </ul>
+                    </div>
+                    <div class="about interest">
+                        <h2 class="title2">My Interests</h3>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-music" aria-hidden="true"></i></i></span>
+                                <span class="text">Music</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
+                                <span class="text">Cooking</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                                <span class="text">Reading</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                      
+                </div>
+            
+        </div>
+    </body>
+</html>
